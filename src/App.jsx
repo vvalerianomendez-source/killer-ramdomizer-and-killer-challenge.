@@ -17,18 +17,18 @@ function App() {
   const [winnerKillerId, setWinnerKillerId] = useState(null);
 
   const [matchesData, setMatchesData] = useState(() => {
-    const savedMatches = localStorage.getItem("dbdMatches");
+  const savedMatches = localStorage.getItem("dbdMatches");
 
-    if (savedMatches) {
-      try {
-        return JSON.parse(savedMatches);
-      } catch {
-        return matches;
-      }
+  if (savedMatches) {
+    try {
+      return JSON.parse(savedMatches);
+    } catch {
+      return [];
     }
+  }
 
-      localStorage.setItem("dbdMatches", JSON.stringify(matches));
-  return matches;
+  localStorage.setItem("dbdMatches", JSON.stringify([]));
+  return [];
 });
 
 const [challengeCompletedIds, setChallengeCompletedIds] = useState(() => {
