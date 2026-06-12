@@ -1,0 +1,31 @@
+export const matches = [
+  {
+    killerId: 17,
+    kills: 4,
+    hooks: 11,
+  },
+
+  {
+    killerId: 17,
+    kills: 1,
+    hooks: 5,
+  },
+
+  {
+    killerId: 42,
+    kills: 4,
+    hooks: 12,
+  },
+
+  {
+    killerId: 42,
+    kills: 3,
+    hooks: 8,
+  },
+
+  {
+    killerId: 25,
+    kills: 2,
+    hooks: 7,
+  },
+];
